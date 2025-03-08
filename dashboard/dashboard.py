@@ -5,7 +5,12 @@ import seaborn as sns
 import streamlit as st
 sns.set(style='dark')
 
-day_df = pd.read_csv("day_data.csv",  parse_dates=["dteday"])
+@st.cache_data
+def load_data():
+    day_df = pd.read_csv("day_data.csv", parse_dates=["dteday"])
+    return day_df
+
+day_df = load_data()
 hour_df = pd.read_csv("hour_data.csv")
 
 st.title("Dashboard Peminjaman Sepeda 🚴‍♂️")
