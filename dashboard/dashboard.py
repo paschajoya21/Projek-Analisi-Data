@@ -15,7 +15,7 @@ hour_df = pd.read_csv("dashboard/hour_data.csv")
 
 st.title("Dashboard Peminjaman Sepeda 🚴‍♂️")
 
-st.sidebar.image("logo.png")
+st.sidebar.image("dashboard/logo.png")
 st.sidebar.title("Rental Sepeda")
 st.sidebar.write("\n")
 st.sidebar.write("Dashboard ini menampilkan analisis data peminjaman sepeda berdasarkan berbagai faktor seperti waktu, cuaca, musim, dan jenis pengguna.")
