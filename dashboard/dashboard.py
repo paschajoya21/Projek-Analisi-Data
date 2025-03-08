@@ -11,7 +11,7 @@ def load_data():
     return day_df
 
 day_df = load_data()
-hour_df = pd.read_csv("hour_data.csv")
+hour_df = pd.read_csv("dashboard/hour_data.csv")
 
 st.title("Dashboard Peminjaman Sepeda 🚴‍♂️")
 
