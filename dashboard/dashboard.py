@@ -7,7 +7,7 @@ sns.set(style='dark')
 
 @st.cache_data
 def load_data():
-    day_df = pd.read_csv("day_data.csv", parse_dates=["dteday"])
+    day_df = pd.read_csv("dashboard/day_data.csv", parse_dates=["dteday"])
     return day_df
 
 day_df = load_data()
